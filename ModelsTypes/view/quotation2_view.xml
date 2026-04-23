@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="quotation2_view_tree" model="ir.ui.view">
+        <field name="name">quotation2_tree</field>
+        <field name="model">quotation.line</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="quotation_id"/>
+                <field name="qty"/>
+                <field name="unit_price"/>
+                <field name="discount_type"/>
+                <field name="discount_value"/>
+                <field name="tax_percent"/>
+                <field name="sequence"/>
+                <field name="price_before_discount"/>
+                <field name="discount_amount"/>
+                <field name="price_subtotal"/>
+                <field name="tax_amount"/>
+                <field name="price_total"/>
+            </tree>
+        </field>
+    </record>
+    <record id="quotation2_view_form" model="ir.ui.view">
+        <field name="name">quotation2_form</field>
+        <field name="model">quotation.line</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                           <field name="name"/>
+                            <field name="quotation_id"/>
+                            <field name="qty"/>
+                            <field name="unit_price"/>
+                            <field name="price_before_discount"/>
+                            <field name="discount_type"/>
+                            <field name="discount_value"/>
+                        </group>
+                        <group>
+                            <field name="discount_amount"/>
+                            <field name="tax_percent"/>
+                            <field name="tax_amount"/>
+                            <field name="sequence"/>
+                            <field name="price_subtotal"/>
+                            <field name="price_total"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="quotation2_action" model="ir.actions.act_window">
+        <field name="name">quotation2</field>
+        <field name="res_model">quotation.line</field>
+    </record>
+
+    <menuitem
+            id="quotation2_id_menu"
+            name="Quotation_Line"
+            parent="estate_root_menu"
+            action="quotation2_action"
+
+    />
+
+</odoo>

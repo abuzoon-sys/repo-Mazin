@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="salse_view_tree" model="ir.ui.view">
+        <field name="name">salse_tree</field>
+        <field name="model">salse.offer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="qty"/>
+                <field name="unit_price"/>
+                <field name="discount_percent"/>
+                <field name="discount_amount"/>
+                <field name="subtotal"/>
+                <field name="tax_precent"/>
+                <field name="tax_amount"/>
+                <field name="total"/>
+            </tree>
+        </field>
+    </record>
+    <record id="salse_view_form" model="ir.ui.view">
+        <field name="name">salse_form</field>
+        <field name="model">salse.offer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="qty"/>
+                            <field name="unit_price"/>
+                            <field name="discount_percent"/>
+                            <field name="discount_amount"/>
+                            <field name="note"/>
+                        </group>
+                        <group>
+                            <field name="subtotal"/>
+                            <field name="tax_precent"/>
+                            <field name="tax_amount"/>
+                            <field name="total"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="salse_action" model="ir.actions.act_window">
+        <field name="name">salse</field>
+        <field name="res_model">salse.offer</field>
+    </record>
+    <menuitem
+            id="salse_menu_item"
+            name="Salse Offer"
+            parent="salse_menu"
+            action="salse_action"
+    />
+</odoo>

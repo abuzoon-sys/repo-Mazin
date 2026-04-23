@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Root Menu -->
+    <menuitem
+
+            id="estate_root_menu"
+            name="Hotel"
+    />
+    <menuitem
+            id="properties_menu"
+            name="Properties"
+            parent="estate_root_menu"
+
+    />
+<!--    <menuitem-->
+<!--            id="employee_menu"-->
+<!--            name="Employee"-->
+<!--            parent="properties_menu"-->
+<!--            action="employee_action"-->
+<!--    />-->
+    <menuitem
+            id="configration_menu"
+            name="Configration"
+            parent="estate_root_menu"
+
+    />
+    <menuitem
+            id="salse_menu"
+            name="SALSE"
+            parent="estate_root_menu"
+
+    />
+
+</odoo>

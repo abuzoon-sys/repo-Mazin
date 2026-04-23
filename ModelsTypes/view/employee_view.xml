@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="employee_view_tree" model="ir.ui.view">
+        <field name="name">employee_tree</field>
+        <field name="model">employee.model</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="employee_id"/>
+                <field name="first_name"/>
+                <field name="last_name"/>
+                <field name="phone_number"/>
+                <field name="birth_date"/>
+                <field name="notes"/>
+            </tree>
+        </field>
+    </record>
+    <record id="employee_action" model="ir.actions.act_window">
+        <field name="name">employee_action</field>
+        <field name="res_model">employee.model</field>
+    </record>
+
+
+</odoo>

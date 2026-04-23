@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="customer_veiw_tree" model="ir.ui.view">
+        <field name="name">customer_tree</field>
+        <field name="model">customer.customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="Customer_ID"/>
+                <field name="country"/>
+                <field name="city"/>
+                <field name="postal_code"/>
+            </tree>
+        </field>
+    </record>
+    <record id="customer_action" model="ir.actions.act_window">
+        <field name="name">customer_action</field>
+        <field name="res_model">customer.customer</field>
+    </record>
+
+    <menuitem
+            id="customer_id_menu"
+            name="Customers*"
+            parent="properties_menu"
+            action="customer_action"
+    />
+
+</odoo>
+

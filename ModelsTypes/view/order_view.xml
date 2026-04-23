@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="order_view_tree" model="ir.ui.view">
+        <field name="name">order_tree</field>
+        <field name="model">customer.order</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="customer"/>
+                <field name="order_name"/>
+                <field name="description"/>
+                <field name="location"/>
+                <field name="quantity"/>
+            </tree>
+        </field>
+    </record>
+    <record id="order_action" model="ir.actions.act_window">
+        <field name="name">order_action</field>
+        <field name="res_model">customer.order</field>
+    </record>
+
+    <menuitem
+            id="order_menu"
+            name="Orders"
+            parent="properties_menu"
+            action="order_action"
+    />
+
+</odoo>

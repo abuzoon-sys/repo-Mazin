@@ -1,0 +1,8 @@
+<odoo>
+    <record id="seq_qb_quotation" model="ir.sequence">
+        <field name="name">Quotation Builder</field>
+        <field name="code">qb.quotation</field>
+        <field name="prefix">QB/%(year)s/</field>
+        <field name="padding">4</field>
+    </record>
+</odoo>

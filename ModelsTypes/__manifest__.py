@@ -1,0 +1,30 @@
+{
+    'name':'ModelsTypes',
+    'version':'1.0',
+    'author':'Mazin babiker',
+    'category':'Home automation',
+    'version':'16.0.0.1.0',
+    'depends':['base','sale_management'],
+    'data':[
+        'security/security.xml',
+        'Data/property_sequence.xml',
+        'Data/sequence.xml',
+        'view/base_menu.xml',
+        'view/employee_view.xml',
+        'view/order_view.xml',
+        'view/property_view.xml',
+        'view/property_history_view.xml',
+        'view/customer_view.xml',
+        'view/owner_view.xml',
+        'view/tag_view.xml',
+        'view/salse_view.xml',
+        'view/quotation_view.xml',
+        'view/quotation2_view.xml',
+        'view/sale_order_view.xml',
+        'view/building_view.xml',
+        'wizard/change_state_wizard_view.xml',
+        'reports/report2.xml',
+        'security/ir.model.access.csv'
+    ],
+    'application':True
+}
